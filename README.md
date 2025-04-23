@@ -166,16 +166,32 @@ Use filters to isolate packet types
 
 ### 7. Install Operating System (Linux/Windows)
 
-Steps:
+Steps to Install Linux (e.g., Ubuntu)
+1. Download ISO from ubuntu.com or any other linux distro
 
-Download ISO (Ubuntu, Windows)
+2. Create bootable USB using Rufus (Windows) or balenaEtcher
 
-Create bootable USB (Rufus/Etcher)
+3. Insert USB and reboot PC
 
-Boot from USB → Follow installation wizard
+4. Enter BIOS/Boot Menu (F2, F12, Esc, or Del)
 
-Setup hostname, partitions, and users
+5. Select USB drive to boot from
+6. Choose "Try or Install Ubuntu"
+   
+8. Follow on-screen instructions:
+Set language, timezone
+Partition disk (automatic/manual)
+Create user
 
+9. Click Install and wait for completion
+10. Reboot after installation and remove USB
+
+Steps to Install Windows Server (Optional)
+1. Download ISO from microsoft.com
+2. Use Rufus to make bootable USB
+3. Boot via USB and follow install steps
+4. Set language, disk partition, and user
+5. Complete setup and reboot
 
 ---
 
