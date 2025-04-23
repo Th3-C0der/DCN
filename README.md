@@ -179,21 +179,7 @@ Setup hostname, partitions, and users
 
 ---
 
-### 8. Visit Computer Lab (Star)
-
-a) Topology: Star
-
-b) Devices: Switch (D-Link), Router (TP-Link)
-
-c) Cables: Cat5e/Cat6 – RJ-45
-
-d) Applications: Chrome, VS Code, Packet Tracer
-
-e) Layout: Sketch a star layout with Switch in center, PCs around
-
----
-OR
-Visit Computer Lab (Bus Topology)
+### 8. Visit Computer Lab (Bus Topology)
 
 a) Topology: Bus
 
@@ -206,6 +192,20 @@ d) Applications: Chrome, VS Code, Packet Tracer
 
 e) Layout:
 Sketch a straight horizontal line representing the bus (coaxial cable).
+
+---
+OR
+Visit Computer Lab (Star)
+
+a) Topology: Star
+
+b) Devices: Switch (D-Link), Router (TP-Link)
+
+c) Cables: Cat5e/Cat6 – RJ-45
+
+d) Applications: Chrome, VS Code, Packet Tracer
+
+e) Layout: Sketch a star layout with Switch in center, PCs around
 
 ---
 
