@@ -1,5 +1,24 @@
 1. Amplitude Shift Keying (ASK) using Python
-Tool: MATLAB / Scilab / GNU Radio / Python (Matplotlib + NumPy)
+Tool: Scilab
+```sci
+clc;
+bits = [1 0 1 1];
+f = 5; fs = 1000;
+t = linspace(0, 1, fs);
+ask = [];
+
+for i = 1:length(bits)
+    if bits(i) == 1 then
+        signal = cos(2*%pi*f*t);
+    else
+        signal = zeros(1, length(t));
+    end
+    ask = [ask, signal];
+end
+
+plot(ask); xtitle("ASK Modulated Signal");
+```
+or python
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -52,7 +71,25 @@ Strip cable → Arrange wires in order → Insert into RJ-45 → Crimp → Test.
 
 Tool: MATLAB / Scilab
 Concept: Combine multiple signals by allocating time slots.
+```sci
+clc;
+t = linspace(0, 1, 500);
+s1 = sin(2*%pi*5*t);
+s2 = cos(2*%pi*5*t);
 
+tdm = zeros(1, length(t));
+for i = 1:length(t)
+    if modulo(i, 2) == 0 then
+        tdm(i) = s1(i);
+    else
+        tdm(i) = s2(i);
+    end
+end
+
+plot(t, tdm); xtitle("Time Division Multiplexed Signal");
+
+```
+or python
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
