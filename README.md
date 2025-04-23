@@ -51,6 +51,8 @@ plt.show()
 
 ---
 
+
+
 ### 2. Crimping a Straight Cable (Universal Color Code)
 
 Standard Color Order (EIA-568B – Both Ends):
@@ -71,6 +73,8 @@ Strip cable → Arrange wires in order → Insert into RJ-45 → Crimp → Test.
 
 
 ---
+
+
 
 ### 3. Time Division Multiplexing (TDM) – Python Simulation
 
@@ -121,20 +125,62 @@ plt.show()
 
 ---
 
-### 4. Create a Hybrid Network using Bluetooth
 
+
+### 4. Create a Hybrid Network using Bluetooth
+A hybrid network combines different types of connections – here we’ll use Bluetooth along with WiFi or Ethernet.
+
+#### Steps:
+1. **Turn on Bluetooth** on two devices (e.g., Laptop and Mobile).
+2. **Pair both devices** via Bluetooth.
+   - On Windows: `Settings > Devices > Bluetooth & other devices`
+3. **Enable Bluetooth tethering** on mobile:
+   - Android: `Settings > Hotspot & Tethering > Bluetooth tethering`
+4. **On Laptop**:
+   - Go to `Control Panel > Network and Sharing Center`
+   - Enable **Bluetooth Network Connection**
+5. **Hybrid Setup**:
+   - One device uses **WiFi/Ethernet**
+   - Second connects through **Bluetooth**, sharing connection
+<details>
+    <summary></summary>
 Hybrid Setup Example:
 Laptop connected to WiFi (Internet)
 Bluetooth-connected speaker/mouse
 Devices form a Hybrid (WiFi + Bluetooth) Network
 
 No code needed. Configure in Settings → Network & Bluetooth.
-
+</details>
 
 ---
 
+
+
 ### 5. Wireshark – Capture IP, TELNET, FTP Packets
 
+Wireshark is a **packet sniffer** used to capture and analyze network packets.
+
+#### Steps:
+1. **Install Wireshark**
+   - [Download from official site](https://www.wireshark.org/)
+   - Install with **Npcap driver**
+
+2. **Open Wireshark** and select active interface (usually WiFi or Ethernet)
+
+3. **Start capturing packets**
+
+4. **Filter Specific Protocols**:
+   - IP Packets: `ip`
+   - TELNET: `telnet`
+   - FTP: `ftp`
+
+5. **Observe Details**
+   - Click a packet to view source, destination, protocol, flags, etc.
+
+6. **Stop Capture** and optionally export the `.pcap` file
+
+<details>
+    <summary></summary>
 Steps:
 Open Wireshark → Start capture
 
@@ -144,13 +190,37 @@ TELNET: tcp.port == 23
 FTP: tcp.port == 21
 
 Use FTP/TELNET client to generate packets
-
+</details>
 
 
 ---
 
+
+
 ### 6. Capture TCP and UDP Packets with Wireshark
 
+TCP and UDP are transport layer protocols.
+
+#### Steps:
+
+1. **Open Wireshark** and start capturing
+
+2. **Use Filters** to isolate packets:
+   - For TCP: `tcp`
+   - For UDP: `udp`
+
+3. **Perform Sample Traffic**:
+   - Open a webpage → generates **TCP**
+   - Use DNS (e.g., `ping google.com`) → generates **UDP**
+
+4. **Observe**:
+   - TCP has 3-way handshake, reliable
+   - UDP is faster but connectionless
+
+5. **Analyze** the packet info: source port, dest port, flags, checksums
+
+<details>
+    <summary></summary>
 Filters:
 TCP: tcp
 UDP: udp
@@ -160,9 +230,11 @@ Steps:
 Start Wireshark
 Run browser, ping, etc.
 Use filters to isolate packet types
-
+</details>
 
 ---
+
+
 
 ### 7. Install Operating System (Linux/Windows)
 
@@ -231,7 +303,10 @@ Steps to Install Windows Server (Optional)
 4. Set language, disk partition, and user
 5. Complete setup and reboot
 </details>
+
 ---
+
+
 
 ### 8. Visit Computer Lab (Bus Topology)
 
@@ -262,6 +337,8 @@ d) Applications: Chrome, VS Code, Packet Tracer
 e) Layout: Sketch a star layout with Switch in center, PCs around
 
 ---
+
+
 
 ### 9. Implement Wireless Network
 Wireless Network Setup:
@@ -304,6 +381,8 @@ Access shared files via SMB
 
 ---
 
+
+
 ### 10. CRC Error Detection – C Code
 ```c
 #include <stdio.h>
@@ -333,6 +412,8 @@ int main() {
 
 
 ---
+
+
 
 ### 11. Hamming Code – C Code
 ```c
