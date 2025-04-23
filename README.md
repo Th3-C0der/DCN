@@ -179,7 +179,7 @@ Setup hostname, partitions, and users
 
 ---
 
-### 8. Visit Computer Lab
+### 8. Visit Computer Lab (Star)
 
 a) Topology: Star
 
@@ -191,7 +191,21 @@ d) Applications: Chrome, VS Code, Packet Tracer
 
 e) Layout: Sketch a star layout with Switch in center, PCs around
 
+---
+OR
+Visit Computer Lab (Bus Topology)
 
+a) Topology: Bus
+
+b) Devices: Terminators (both ends), Coaxial cable backbone, Computers connected via T-connectors
+
+c) Cables:Coaxial cable (RG-58) with BNC connectors, T-connectors and terminators
+
+
+d) Applications: Chrome, VS Code, Packet Tracer
+
+e) Layout:
+Sketch a straight horizontal line representing the bus (coaxial cable).
 
 ---
 
