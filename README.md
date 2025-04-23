@@ -201,8 +201,10 @@ Remove the ISO when prompted
 Boot into your new Ubuntu system
 
 ---
-
+<details>
+    <summary></summary>
 Steps to Install Linux (e.g., Ubuntu)
+    
 1. Download ISO from ubuntu.com or any other linux distro
 
 2. Create bootable USB using Rufus (Windows) or balenaEtcher
@@ -228,7 +230,7 @@ Steps to Install Windows Server (Optional)
 3. Boot via USB and follow install steps
 4. Set language, disk partition, and user
 5. Complete setup and reboot
-
+</details>
 ---
 
 ### 8. Visit Computer Lab (Bus Topology)
