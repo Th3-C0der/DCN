@@ -272,7 +272,8 @@ Wait for installation to complete
 Remove the ISO when prompted
 Boot into your new Ubuntu system
 
----
+Tutorial video: https://youtu.be/Hva8lsV2nTk?feature=shared
+
 <details>
     <summary></summary>
 Steps to Install Linux (e.g., Ubuntu)
