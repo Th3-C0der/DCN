@@ -131,6 +131,27 @@ plt.show()
 A hybrid network combines different types of connections – here we’ll use Bluetooth along with WiFi or Ethernet.
 
 #### Steps:
+1. **Turn on Bluetooth** on both devices (e.g., Laptop and Mobile).
+2. **Pair the devices**:
+   - On Windows: `Settings > Devices > Bluetooth & other devices > Add Bluetooth device`
+   - On Android: `Settings > Bluetooth > Pair new device`
+3. **Enable Bluetooth tethering** on the mobile (optional, for internet sharing):
+   - Go to `Settings > Hotspot & Tethering > Enable Bluetooth tethering`
+4. **On Laptop**:
+   - Go to `Control Panel > Network and Sharing Center`
+   - Enable **Bluetooth Network Connection** for internet sharing (optional)
+5. **Hybrid Setup**:
+   - One device (e.g., Laptop) uses **WiFi/Ethernet**
+   - Other device connects via **Bluetooth** for file sharing and/or internet access
+6. **File Sharing via Bluetooth**:
+   - On sender device (e.g., Laptop):  
+     Right-click file → `Send to > Bluetooth device` → Select paired device  
+   - On receiver device: Accept the file when prompted  
+   - ✅ File is transferred over Bluetooth successfully
+  
+<details>
+    <summary></summary>
+    Steps:
 1. **Turn on Bluetooth** on two devices (e.g., Laptop and Mobile).
 2. **Pair both devices** via Bluetooth.
    - On Windows: `Settings > Devices > Bluetooth & other devices`
@@ -142,8 +163,9 @@ A hybrid network combines different types of connections – here we’ll use Bl
 5. **Hybrid Setup**:
    - One device uses **WiFi/Ethernet**
    - Second connects through **Bluetooth**, sharing connection
-<details>
-    <summary></summary>
+    
+---
+    
 Hybrid Setup Example:
 Laptop connected to WiFi (Internet)
 Bluetooth-connected speaker/mouse
