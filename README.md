@@ -18,6 +18,9 @@ end
 
 plot(ask); xtitle("ASK Modulated Signal");
 ```
+output:
+![image](https://github.com/user-attachments/assets/1af81a2a-27e1-4b83-aeeb-382bf4b7d4f6)
+
 or python
 ```python
 import numpy as np
@@ -89,6 +92,9 @@ end
 plot(t, tdm); xtitle("Time Division Multiplexed Signal");
 
 ```
+output:
+![image](https://github.com/user-attachments/assets/d5da80ac-6b5e-454e-884e-2f80a224e957)
+
 or python
 ```python
 import numpy as np
