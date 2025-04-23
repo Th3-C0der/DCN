@@ -19,6 +19,7 @@ end
 plot(ask); xtitle("ASK Modulated Signal");
 ```
 output:
+
 ![image](https://github.com/user-attachments/assets/1af81a2a-27e1-4b83-aeeb-382bf4b7d4f6)
 
 or python
@@ -93,6 +94,7 @@ plot(t, tdm); xtitle("Time Division Multiplexed Signal");
 
 ```
 output:
+
 ![image](https://github.com/user-attachments/assets/d5da80ac-6b5e-454e-884e-2f80a224e957)
 
 or python
@@ -230,6 +232,10 @@ int main() {
 }
 ```
 
+![image](https://github.com/user-attachments/assets/82f045d8-321f-47db-b788-762aa54b3fe8)
+
+
+
 ---
 
 11. Hamming Code – C Code
@@ -252,3 +258,6 @@ int main() {
   for (int i=0; i<12; i++) printf("%d", h[i]);
 }
 ```
+
+![image](https://github.com/user-attachments/assets/fd021d78-9445-4150-aa16-0a1ed8ac2a1c)
+
