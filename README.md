@@ -1,9 +1,5 @@
-DCN PRACTICAL EXAM – QUICK SOLUTIONS
-
-
----
-
-1. ASK Modulation using Python
+1. Amplitude Shift Keying (ASK) using Python
+Tool: MATLAB / Scilab / GNU Radio / Python (Matplotlib + NumPy)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,9 +27,9 @@ plt.show()
 
 ---
 
-2. Crimping Straight Cable (EIA-568B Order)
+2. Crimping a Straight Cable (Universal Color Code)
 
-Wire color order (both ends):
+Standard Color Order (EIA-568B – Both Ends):
 
 1. White-Orange  
 2. Orange  
@@ -44,14 +40,20 @@ Wire color order (both ends):
 7. White-Brown  
 8. Brown
 
-Use: Crimping tool + RJ-45 + Cable tester.
+Tools: RJ-45 Connectors, Crimping Tool, Cable Tester
+Steps:
+Strip cable → Arrange wires in order → Insert into RJ-45 → Crimp → Test.
+
 
 
 ---
 
-3. TDM Signal Simulation (Python)
+3. Time Division Multiplexing (TDM) – Python Simulation
+
+Tool: MATLAB / Scilab
+Concept: Combine multiple signals by allocating time slots.
+
 ```python
-import numpy as np, matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -73,71 +75,75 @@ plt.show()
 
 ---
 
-4. Hybrid Network (Bluetooth + WiFi)
+4. Create a Hybrid Network using Bluetooth
 
-Connect phone/laptop to Wi-Fi.
+Hybrid Setup Example:
+Laptop connected to WiFi (Internet)
+Bluetooth-connected speaker/mouse
+Devices form a Hybrid (WiFi + Bluetooth) Network
 
-Connect Bluetooth devices (printer/headset).
-
-Hybrid network = WLAN + PAN.
-
+No code needed. Configure in Settings → Network & Bluetooth.
 
 
 ---
 
-5. Wireshark: Capture IP, TELNET, FTP
+5. Wireshark – Capture IP, TELNET, FTP Packets
 
-Filters:
+Steps:
+Open Wireshark → Start capture
 
+Use filters:
 IP: ip
-
 TELNET: tcp.port == 23
-
 FTP: tcp.port == 21
 
-
-Generate traffic via browser/TELNET/FTP client.
+Use FTP/TELNET client to generate packets
 
 
 
 ---
 
-6. Capture TCP & UDP Packets in Wireshark
+6. Capture TCP and UDP Packets with Wireshark
 
-Use Filters:
-
+Filters:
 TCP: tcp
-
 UDP: udp
 
+Steps:
 
-
-
----
-
-7. OS Installation
-
-Download ISO (Ubuntu/Windows Server)
-
-Make bootable USB (e.g., Rufus)
-
-Boot & install, setup user/network
-
+Start Wireshark
+Run browser, ping, etc.
+Use filters to isolate packet types
 
 
 ---
 
-8. Computer Lab Survey
+7. Install Operating System (Linux/Windows)
 
-a) Topology: Likely Star
+Steps:
 
-b) Devices: Switch, Router (TP-Link, etc.)
+Download ISO (Ubuntu, Windows)
 
-c) Cables: Cat5e/Cat6, RJ-45
+Create bootable USB (Rufus/Etcher)
 
-d) Applications: Browsers, IDEs, Simulators
+Boot from USB → Follow installation wizard
 
-e) Sketch layout showing PC, switch, router
+Setup hostname, partitions, and users
+
+
+---
+
+8. Visit Computer Lab
+
+a) Topology: Star
+
+b) Devices: Switch (D-Link), Router (TP-Link)
+
+c) Cables: Cat5e/Cat6 – RJ-45
+
+d) Applications: Chrome, VS Code, Packet Tracer
+
+e) Layout: Sketch a star layout with Switch in center, PCs around
 
 
 
@@ -145,46 +151,51 @@ e) Sketch layout showing PC, switch, router
 
 9. Implement Wireless Network
 
-Setup router → Enable SSID/password
+Steps:
+Use WiFi Router → Enable DHCP
+Connect laptop/phones
+Check via ipconfig / ifconfig
 
-Connect devices → Check with ipconfig/ifconfig
-
+Optional Testing:
+Ping router IP
+Access shared files via SMB
 
 
 ---
 
-10. CRC Error Detection (C)
+10. CRC Error Detection – C Code
 ```c
-#include<stdio.h>
-void xor(char *a, char *b, int len){ for(int i=1;i<len;i++) a[i]=a[i]==b[i]?'0':'1'; }
-void crc(char *ip, char *key, char *rem){
-  char temp[50]; int k=strlen(key);
-  strcpy(temp, ip); strcat(temp, "000");
+#include <stdio.h>
+#include <string.h>
+void xor(char *a, char *b, int n) {
+  for (int i = 1; i < n; i++) a[i] = (a[i] == b[i]) ? '0' : '1';
+}
+void crc(char *data, char *key, char *rem) {
+  char temp[50]; int k = strlen(key);
+  strcpy(temp, data); strcat(temp, "000");
   strncpy(rem, temp, k);
-  for(int i=0; i<strlen(ip); i++) {
-    if(rem[0]=='1') xor(rem,key,k);
-    for(int j=0;j<k-1;j++) rem[j]=rem[j+1];
-    rem[k-1]=temp[i+k];
+  for (int i = 0; i < strlen(data); i++) {
+    if (rem[0] == '1') xor(rem, key, k);
+    memmove(rem, rem+1, k-1); rem[k-1] = temp[i+k];
   }
 }
-int main(){
-  char ip[50], key[20], rem[20];
-  printf("Enter data: "); scanf("%s", ip);
-  printf("Enter key: "); scanf("%s", key);
-  crc(ip, key, rem);
-  printf("CRC: %s\n", rem);
+int main() {
+  char data[50], key[20], rem[20];
+  printf("Data: "); scanf("%s", data);
+  printf("Key: "); scanf("%s", key);
+  crc(data, key, rem); printf("CRC: %s\n", rem);
 }
 ```
 
-
 ---
 
-11. Hamming Code (C)
+11. Hamming Code – C Code
 ```c
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main() {
   int d[8], h[12]={0};
-  printf("Enter 8 bits: "); for(int i=0;i<8;i++) scanf("%d", &d[i]);
+  printf("Enter 8 bits: ");
+  for (int i=0; i<8; i++) scanf("%d", &d[i]);
 
   h[2]=d[0]; h[4]=d[1]; h[5]=d[2]; h[6]=d[3];
   h[8]=d[4]; h[9]=d[5]; h[10]=d[6]; h[11]=d[7];
@@ -194,7 +205,7 @@ int main(){
   h[3]=h[4]^h[5]^h[6]^h[11];
   h[7]=h[8]^h[9]^h[10]^h[11];
 
-  printf("Hamming Code: ");
-  for(int i=0;i<12;i++) printf("%d", h[i]);
+  printf("Hamming: ");
+  for (int i=0; i<12; i++) printf("%d", h[i]);
 }
 ```
