@@ -1,4 +1,5 @@
-1. Amplitude Shift Keying (ASK) using Python
+### 1. Amplitude Shift Keying (ASK) using Python
+
 Tool: Scilab
 ```sci
 clc;
@@ -50,7 +51,7 @@ plt.show()
 
 ---
 
-2. Crimping a Straight Cable (Universal Color Code)
+### 2. Crimping a Straight Cable (Universal Color Code)
 
 Standard Color Order (EIA-568B – Both Ends):
 
@@ -71,7 +72,7 @@ Strip cable → Arrange wires in order → Insert into RJ-45 → Crimp → Test.
 
 ---
 
-3. Time Division Multiplexing (TDM) – Python Simulation
+### 3. Time Division Multiplexing (TDM) – Python Simulation
 
 Tool: MATLAB / Scilab
 Concept: Combine multiple signals by allocating time slots.
@@ -120,7 +121,7 @@ plt.show()
 
 ---
 
-4. Create a Hybrid Network using Bluetooth
+### 4. Create a Hybrid Network using Bluetooth
 
 Hybrid Setup Example:
 Laptop connected to WiFi (Internet)
@@ -132,7 +133,7 @@ No code needed. Configure in Settings → Network & Bluetooth.
 
 ---
 
-5. Wireshark – Capture IP, TELNET, FTP Packets
+### 5. Wireshark – Capture IP, TELNET, FTP Packets
 
 Steps:
 Open Wireshark → Start capture
@@ -148,7 +149,7 @@ Use FTP/TELNET client to generate packets
 
 ---
 
-6. Capture TCP and UDP Packets with Wireshark
+### 6. Capture TCP and UDP Packets with Wireshark
 
 Filters:
 TCP: tcp
@@ -163,7 +164,7 @@ Use filters to isolate packet types
 
 ---
 
-7. Install Operating System (Linux/Windows)
+### 7. Install Operating System (Linux/Windows)
 
 Steps:
 
@@ -178,7 +179,7 @@ Setup hostname, partitions, and users
 
 ---
 
-8. Visit Computer Lab
+### 8. Visit Computer Lab
 
 a) Topology: Star
 
@@ -194,7 +195,7 @@ e) Layout: Sketch a star layout with Switch in center, PCs around
 
 ---
 
-9. Implement Wireless Network
+### 9. Implement Wireless Network
 
 Steps:
 Use WiFi Router → Enable DHCP
@@ -208,7 +209,7 @@ Access shared files via SMB
 
 ---
 
-10. CRC Error Detection – C Code
+### 10. CRC Error Detection – C Code
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -238,7 +239,7 @@ int main() {
 
 ---
 
-11. Hamming Code – C Code
+### 11. Hamming Code – C Code
 ```c
 #include <stdio.h>
 int main() {
