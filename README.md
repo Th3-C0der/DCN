@@ -196,6 +196,33 @@ e) Layout: Sketch a star layout with Switch in center, PCs around
 ---
 
 ### 9. Implement Wireless Network
+Wireless Network Setup:
+
+1. Position Router – Place your wireless router in a central, open area for best coverage.
+
+2. Turn Off Modem – Power off your modem before setup.
+
+3. Connect Modem to Router – Use an Ethernet cable from modem to router’s WAN port.
+
+4. Connect Computer to Router – Use another Ethernet cable from router's LAN port to your computer.
+
+5. Power On Devices – Turn on modem, router, and computer in that order.
+
+6. Access Router Settings – Open a browser and enter the router’s IP to access its settings.
+
+7. Change Admin Login – Update the default username and password for better security.
+
+8. Enable WPA2 Security – Choose WPA2 encryption and set a strong passphrase (8+ characters).
+
+9. Set Network Name (SSID) – Rename your Wi-Fi to something recognizable.
+
+10. Change Channel – Switch to a less crowded channel (1, 6, or 11) to avoid interference.
+
+11. Install Wireless Adapter – If needed, install a wireless adapter and drivers on your computer.
+
+12. Connect Devices – Search for your new Wi-Fi on all devices and connect.
+
+---
 
 Steps:
 Use WiFi Router → Enable DHCP
