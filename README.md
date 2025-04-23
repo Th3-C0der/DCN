@@ -227,13 +227,13 @@ void crc(char *data, char *key, char *rem) {
 }
 int main() {
   char data[50], key[20], rem[20];
-  printf("Data: "); scanf("%s", data);
-  printf("Key: "); scanf("%s", key);
+  printf("Enter Data: "); scanf("%s", data);
+  printf("Enter Key: "); scanf("%s", key);
   crc(data, key, rem); printf("CRC: %s\n", rem);
 }
 ```
+![image](https://github.com/user-attachments/assets/86912312-9d93-4cc4-b37b-2a52de335fbb)
 
-![image](https://github.com/user-attachments/assets/82f045d8-321f-47db-b788-762aa54b3fe8)
 
 
 
