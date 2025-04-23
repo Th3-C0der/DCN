@@ -166,6 +166,42 @@ Use filters to isolate packet types
 
 ### 7. Install Operating System (Linux/Windows)
 
+Steps to Install Linux (Ubuntu) in VirtualBox
+
+1. Download Ubuntu ISO
+From: https://ubuntu.com/download
+
+2. Install VirtualBox
+Download from: https://www.virtualbox.org
+
+3. Create a New VM
+Open VirtualBox → Click New
+Name: Ubuntu
+Type: Linux
+Version: Ubuntu (64-bit)
+RAM: At least 2048 MB
+
+4. Attach ISO File
+Go to Settings > Storage
+Click Empty > Choose a disk file
+Select the downloaded Ubuntu ISO
+
+5. Start the VM
+Click Start to boot the VM
+Select "Install Ubuntu"
+
+6. Follow Installer Prompts
+Choose language, keyboard, updates
+Select Erase Disk and Install (safe inside VM)
+Create user credentials
+Wait for installation to complete
+
+7. Reboot the VM
+Remove the ISO when prompted
+Boot into your new Ubuntu system
+
+---
+
 Steps to Install Linux (e.g., Ubuntu)
 1. Download ISO from ubuntu.com or any other linux distro
 
