@@ -368,8 +368,9 @@ Wireless Network Setup:
 
 12. Connect Devices – Search for your new Wi-Fi on all devices and connect.
 
----
 
+<details>
+    <summary></summary>
 Steps:
 Use WiFi Router → Enable DHCP
 Connect laptop/phones
@@ -378,7 +379,7 @@ Check via ipconfig / ifconfig
 Optional Testing:
 Ping router IP
 Access shared files via SMB
-
+</details>
 
 ---
 
